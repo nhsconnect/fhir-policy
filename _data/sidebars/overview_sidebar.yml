@@ -1,0 +1,38 @@
+entries:
+- title: FHIR Policy
+  product: FHIR Policy<br/>
+  version: 0.0.1-alpha
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+  - title: FHIR Policy Requirements
+    output: web
+    folderitems:
+    - title: General
+      url: /general.html
+      output: web
+    - title: Conformance
+      url: /conformance.html
+      output: web
+    - title: Identifiers
+      url: /identifiers.html
+      output: web
+    - title: Serialisation
+      url: /serialisation.html
+      output: web
+    - title: Versioning
+      url: /versioning.html
+      output: web
+    - title: Publication
+      url: publication.html
+      output: web
+
+
