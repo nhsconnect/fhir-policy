@@ -34,5 +34,7 @@ entries:
     - title: Publication
       url: publication.html
       output: web
-
+    - title: Operations
+      url: operations.html
+      output: web
 
