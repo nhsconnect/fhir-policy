@@ -11,7 +11,7 @@ site_title: FHIR Policy
 company_name: Health and Social Care Information Centre
 # this appears in the footer
 
-github_editme_path: /edit/develop/
+#github_editme_path: /edit/develop/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #disqus: true
@@ -96,9 +96,9 @@ description: "Policies for the use of HL7 FHIR standards in the NHS in England"
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://ahatherly.github.io/national-authentication-and-authorisation
+url: https://nhsconnect.github.io/fhir-policy
 
-repository: ahatherly/fhir-policy
+repository: nhsconnect/fhir-policy
 
 gist:
   noscript: false
