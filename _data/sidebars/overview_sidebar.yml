@@ -12,6 +12,9 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
+    - title: Release Notes
+      url: /overview_release_notes.html
+      output: web
 
   - title: FHIR Policy Requirements
     output: web
