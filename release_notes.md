@@ -12,6 +12,7 @@ Note - versions of this policy follow [semantic versioning](http://semver.org/) 
 #### 1.1.0-alpha (9th November 2017)
 
 - Added requirement: FHIR-PUB-04 FHIR API Maturity
+- Addes requirements: FHIR-OPER-01 and FHIR-OPER-02 covering the use of custom operations in ReST endpoints
 - Added this release notes page
 
 #### 1.0.0-alpha (21st July 2017)
