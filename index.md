@@ -20,4 +20,5 @@ These constraints are outlined across a number of sections:
 * [Serialisation](serialisation.html)
 * [Versioning](versioning.html)
 * [Publication](publication.html)
+* [Operations](operations.html)
 

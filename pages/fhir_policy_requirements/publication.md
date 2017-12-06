@@ -25,6 +25,13 @@ summary: Requirements for the publication of nationally defined FHIR API definit
 %}
 
 {% include requirement_box.html
-	heading="FHIR-PUB-04: FHIR Implementation Guides"
-	content="Requirement to be drafted..."
+	heading="FHIR-PUB-04: FHIR API Maturity"
+	content="When any FHIR API implementation guides are published (using Jekyll as per FHIR-PUB-01), they MUST have an associated maturity label. These labels will be taken from the GDS development process stages, and will be one of:
+
+ - **Experimental**: Early development/POC version of an API for early sight during discovery
+ - **Alpha**: Initial test APIs, likely to change substantially, or be discontinued as the project develops
+ - **Beta**: APIs that are still under active development and subject to change, but that are likely to progress into a live API
+ - **Release Candidate**: APIs that are largely complete, unlikely to change substantially, but still need further testing before becoming live
+ - **Live**: Release live APIs
+ - **Discontinued**: APIs which have been discontinued and should not be used for new development"
 %}
