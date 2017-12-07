@@ -26,12 +26,16 @@ summary: Requirements for the publication of nationally defined FHIR API definit
 
 {% include requirement_box.html
 	heading="FHIR-PUB-04: FHIR API Maturity"
-	content="When any FHIR API implementation guides are published (using Jekyll as per FHIR-PUB-01), they MUST have an associated maturity label. These labels will be taken from the GDS development process stages, and will be one of:
+	content="When any FHIR API implementation guides are published (using Jekyll as per FHIR-PUB-01), they MUST have an associated maturity label. These labels are based on the GDS development process stages, and will be one of:
 
- - **Experimental**: Early development/POC version of an API for early sight during discovery
- - **Alpha**: Initial test APIs, likely to change substantially, or be discontinued as the project develops
- - **Beta**: APIs that are still under active development and subject to change, but that are likely to progress into a live API
- - **Release Candidate**: APIs that are largely complete, unlikely to change substantially, but still need further testing before becoming live
+ - **Experimental**: Early development/proof of concept version of an API for early sight during discovery.
+ - **Alpha**: Initial test APIs, likely to change substantially.
+	- Typical Usage: Engagement with others interested in being involved with early development work and influencing the direction taken.
+ - **Beta**: APIs that are still under active development and subject to change
+	- Typical Usage: Engagement with 'first of type' or early adopters by the creation of first of type or pilot systems for testing, proof of concept etc. This development can assist in progression to a release candidate for a wider rollout.
+ - **Release Candidate**: APIs that are largely complete, unlikely to change substantially, but still need further testing by a wider group of implementers before becoming live.
+	- Typical Usage: After having been previously implemented by 'first of type' or pilot sites and now to be rolled out to a wider group of implementers.
  - **Live**: Release live APIs
  - **Discontinued**: APIs which have been discontinued and should not be used for new development"
 %}
+

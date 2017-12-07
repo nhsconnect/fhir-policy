@@ -21,4 +21,6 @@ These constraints are outlined across a number of sections:
 * [Versioning](versioning.html)
 * [Publication](publication.html)
 * [Operations](operations.html)
+* [Naming](naming.html)
+* [National Services](national-services.html)
 
