@@ -1,7 +1,7 @@
 entries:
 - title: FHIR Policy
   product: FHIR Policy<br/>
-  version: 0.0.1-alpha
+  version: 1.2.0-alpha
   levels: one
   folders:
 
@@ -39,5 +39,11 @@ entries:
       output: web
     - title: Operations
       url: operations.html
+      output: web
+    - title: Naming
+      url: naming.html
+      output: web
+    - title: National Services
+      url: national-services.html
       output: web
 

@@ -1,3 +1,4 @@
-Jekyll documentation pack for national authentication and authorisation services
+Jekyll documentation pack for national policy for the use of FHIR in health and social care in England.
 
-NOTE: This is a very early working document and should NOT be considered a reflection of NHS Digital policy. It is being made available for early review and discussion only and should not be used to influence development of local solutions at this stage.
+This is an early alpha policy, so feedback and contributions are welcome.
+
