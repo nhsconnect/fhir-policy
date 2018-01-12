@@ -21,7 +21,7 @@ Version numbers held in profiles and resource instanced MUST therefore be in one
 - MAJOR.MINOR.PATCH – e.g. 1.0.2"
 %}
 
-Definitions (**BLAH**):
+Definitions (**BLAH2**):
 
 - Minor Change
    - A minor change is defined as a backwards-compatible change which is not expected to break existing implementations. Examples include:
