@@ -47,7 +47,8 @@ The segments are defined as follows:-
 - **BusinessName2**: The second business name of the CodeSystem. The CodeSystem MAY have a second BusinessName segment. Where there is a second BusinessName, each one MUST be separated by a hyphen (-) character. For example 'CodeSystem-SPINE-ErrorOrWarningCode'.
 - **Version**: This is the major version number of the CodeSystem e.g. 'CodeSystem-ITK-CareSettingType-1'. Mandatory
 
-The filename of the CodeSystem forms the final segment of the CodeSystem's URL and is used to populate its logical id (e.g. the CodeSystem.id element). An example URL for a CodeSystem on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/CodeSystem/ITK-CareSettingType-1, ITK-CareSettingType-1 being the value of the logical id.
+The [BusinessName1]-[BusinessName2]-[Version] section of the CodeSystem's filename forms the final segment of its URL and is used to populate its logical id (e.g. the CodeSystem.id element). An example URL for a CodeSystem on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/CodeSystem/ITK-CareSettingType-1, ITK-CareSettingType-1 being the value of the logical id.
+
 
 "
 %}
@@ -62,10 +63,10 @@ The segments are defined as follows:-
 
 - **FHIRAssetName**: The name of the base FHIR asset e.g. ValueSet. Mandatory
 - **BusinessName1**: The first business name of the ValueSet. The ValueSet name MUST have at least one BusinessName segment,  e.g. 'ITK', 'SPINE'. Where a ValueSet may be used across several domains, business names should reflect that.
-- **BusinessName2**: The second business name of the ValueSet. The ValueSet may have a second BusinessName segment. Where there is a second BusinessName, each one MUST be separated by a hyphen (-) character e.g. 'ITK-PatientAllergyChangeType'.
+- **BusinessName2**: The second business name of the ValueSet. The ValueSet MAY have a second BusinessName segment. Where there is a second BusinessName, each one MUST be separated by a hyphen (-) character e.g. 'ITK-PatientAllergyChangeType'.
 - **Version**: This is the major version number of the ValueSet e.g. 'ValueSet-CareConnect-MedicationDosageMethod-1'. Mandatory
 
-The filename of the ValueSet forms the final segment of the ValueSet's URL and is used to populate its logical id (e.g. the ValueSet.id element). An example URL for a ValueSet on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1, CareConnect-MedicationDosageRoute-1 being the value of the logical id.
+The [BusinessName1]-[BusinessName2]-[Version] section of the ValueSet's filename forms the final segment of the its URL and is used to populate its logical id (e.g. the ValueSet.id element). An example URL for a ValueSet on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1, CareConnect-MedicationDosageRoute-1 being the value of the logical id.
 
 "
 %}
@@ -74,16 +75,17 @@ The filename of the ValueSet forms the final segment of the ValueSet's URL and i
 	heading="FHIR-NAME-04: FHIR Extension names MUST follow an agreed format"
 	content="The name of the extension refers to the name.value element in the extension's StructureDefinition and the extension's filename. This section details a set of rules that MUST be followed when creating NHS Digital FHIR Extensions. The extension's name consists of a number of name segments and will be in the form:-
 
-**Extension-[Base]-[BusinessName1]-[BusinessName2]-[Version]**
+**[FHIRAssetName]-[Base]-[BusinessName1]-[BusinessName2]-[Version]**
 
 The segments are defined as follows:-
 
+- **FHIRAssetName**: The name of the base FHIR asset e.g. Extension. Mandatory
 - **Base**: The base extension, if one is used e.g. for a derived CareConnect extension. This is therefore optional, but mandatory for CareConnect derived extensions.
 - **BusinessName1**: The first business name of the extension. The asset name MUST have at least one BusinessName segment e.g. 'ITK', 'SPINE' etc. Where an asset may be used across several domains, business names should reflect that.
 - **BusinessName2**: The second business name of the extension. The asset name MAY have a second BusinessName segment. Where there is a second business name, each one MUST be separated by a hyphen (-) character e.g. 'Extension-ITK-Informant-1'.
 - **Version**: This is the major version number of the extension e.g. Extension-CareConnect-ConditionEpisode-1. Mandatory
 
-The name of the extension is used to populate its logical id as used in its URL (e.g. the StructureDefinition.id element). The logical id value is the final segment of the URL of the extension's StructureDefinition on the NHS Digital FHIR Reference server. An example URL for a CareConnect derived extension (STU3) would be https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-AllergyCertainty-1, Extension-CareConnect-GPC-AllergyCertainty-1 being the value of the logical id.
+The extension name forms the final segment of the URL of the extension's StructureDefinition and is used to populate its logical id (e.g. the StructureDefinition.id element) on the NHS Digital FHIR Reference server. An example URL for a CareConnect derived extension (STU3) is https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-AllergyCertainty-1, Extension-CareConnect-GPC-AllergyCertainty-1 being the value of the logical id.
 
 "
 %}
@@ -96,13 +98,13 @@ The name of the extension is used to populate its logical id as used in its URL 
 
 The segments are defined to as follows:
 
-- **Base**: The base OperationDefinition, if one is used. Optional but mandatory for  a CareConnect derived OperationDefinition.
+- **Base**: The base OperationDefinition, if one is used. Optional but mandatory for  a CareConnect derived OperationDefinitions.
 - **BusinessName**: A business name for the OperationDefinition. Optional.
 - **OperationConstraint**: The OperationConstraint. Mandatory. An example of an OperationConstraint is 'CareRecord'.
 - **OperationDefinitionKind**: Choice of 'Operation' or 'Query' fixed character strings. Mandatory.
 - **Version**: This is the major version number of the OperationDefinition e.g. GPConnect-CareRecord-Operation-1. Mandatory.
 
-The name of the OperationDefinition is used to populate its logical id as used in its URL (e.g. the OperationDefinition.id element). The logical id value is the final segment of the URL of the OperationDefinition on the NHS Digital FHIR Reference server. An example URL for an OperationDefinition (STU3) would be https://fhir.nhs.uk/STU3/OperationDefinition/GPConnect-RegisterPatient-Operation-1, GPConnect-RegisterPatient-Operation-1 being the value of the logical id.
+The OperationDefinition name forms the final segment of its URL and is used to populate its logical id (e.g. the OperationDefinition.id element) on the NHS Digital FHIR Reference server. An example URL for an OperationDefinition (STU3) would be https://fhir.nhs.uk/STU3/OperationDefinition/GPConnect-RegisterPatient-Operation-1, GPConnect-RegisterPatient-Operation-1 being the value of the logical id.
 
 
 "
@@ -150,15 +152,19 @@ The segments are defined as follows:-
 	- ITK-device-1 **INVALID** (Incorrect capitalisation)
 	- ADW-Discharge-Notice-Accept-Response-Message-Header-1 **INVALID** (Too many segments, and hyphen in resource name)
 
-- CodeSystem names:
-	- CodeSystem-CareConnect-EthnicCategory-1 **VALID**
-	- CodeSystem-ITK-Message-Event-1 **INVALID** (Hyphen in resource name)
-	- ITK-Priority-1 **INVALID** (No FHIRAssetName)
+- Extension names:
+	- Extension-CareConnect-GPC-EthnicCategory-1 **VALID**
+	- Extension-ITK-MessageHandling-2 **VALID**
+	- ITK-Participant-1 **INVALID** (No FHIRAssetName)
 
-- ValueSet names:
-	- ValueSet-CareConnect-EthnicCategory-1 **VALID**
-	- CodeSystem-ITK-Message-Event-1 **INVALID** (Hyphen in resource name)
-	- ITK-Priority-1 **INVALID** (No FHIRAssetName)
+- OperationDefinition names:
+	- GPConnect-RegisterPatient-Operation-1 **VALID**
+	- eRS-Operation-1 **INVALID** (No OperationConstraint)
+
+- Identifiers:
+	- https://fhir.nhs.uk/Id/nhs-number **VALID**
+	- https://fhir.nhs.uk/Id/localorganizationcode **INVALID** (No hyphens separating business names)
+
 	
 
 **Glossary**
