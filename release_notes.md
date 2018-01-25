@@ -9,6 +9,10 @@ summary: "Release notes outlining changes to the FHIR Policy."
 
 Note - versions of this policy follow [semantic versioning](http://semver.org/) - minor and patch versions should be considered as non-breaking.
 
+#### 1.3.0-alpha (25th January 2018)
+
+- Updated naming policy statements to clarify that they cover the name, ID and filename for national profiles
+
 #### 1.2.0-alpha (7th December 2017)
 
 - Altered wording on FHIR-PUB-04 to further clarify the meaning of the maturity labels
