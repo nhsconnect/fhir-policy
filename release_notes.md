@@ -12,6 +12,9 @@ Note - versions of this policy follow [semantic versioning](http://semver.org/) 
 #### 1.3.0-alpha (25th January 2018)
 
 - Updated naming policy statements to clarify that they cover the name, ID and filename for national profiles
+- Added some clariying paragraphs on the publication page to clarify the roles of Github and the NHD Developer network
+- Added requirement FHIR-SERIAL-03 to clarify that custom XML namespaces outside those defined in the FHIR spec must not be used
+- Added UBRN in the list of examples of allowable national business identifiers also used as logical identifiers in requirement FHIR-IDENT-01
 
 #### 1.2.0-alpha (7th December 2017)
 

@@ -13,9 +13,12 @@ In the FHIR standard, every resource has a unique identifier for that resource i
 	heading="FHIR-IDENT-01: Business IDs MUST only be used as the resource ID in ReST APIs when the system is the authoritative source of that entity"
 	content="In some cases, where a system is acknowledged as the authoritative source of reference for a particular class of information, the need to do a lookup using a business ID to identify the logical ID of a resource may not be desirable. Equally, where the business ID is actually the primary key in a system for which the FHIR ReST API is simply a facade, generating another synthetic ID may not add any real value. In these cases, and ONLY in these cases, the business ID MAY be used as the logical ID for the resource exposed in a FHIR ReST API.
 Currently, the only national resources this would apply to are:
-<ul><li>Organisation (ODS Code)</li>
-<li>Patient (NHS Number)</li>
-<li>Prescription (Prescription ID)</li>
-<li>Practitioner (SDS ID)</li></ul>
+
+- Organisation (ODS Code)
+- Patient (NHS Number)
+- Prescription (Prescription ID)
+- Practitioner (SDS ID)
+- National eReferral request (UBRN)
+
 Clients must never assume a specific ID format when querying for resources."
 %}
