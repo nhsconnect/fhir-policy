@@ -1,7 +1,7 @@
 entries:
 - title: FHIR Policy
   product: FHIR Policy<br/>
-  version: 1.2.0-alpha
+  version: 1.3.0-alpha
   levels: one
   folders:
 

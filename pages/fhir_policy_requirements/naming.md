@@ -9,33 +9,35 @@ summary: Naming conventions for nationally defined FHIR assets
 
 In order to promote consistency and make it easier for implementers to locate suitable profiles, extensions, value sets, etc, for their projects, a naming strategy will be adopted for nationally defined FHIR assets. The scope of this document is FHIR STU3.
 
-For detailed definitions of concepts discussed within this guidance document, refer to the appropriate published version of the [FHIR standard].
-
-The keywords MUST, MAY, and SHOULD are to be interpreted as described in [RFC2119].
+For detailed definitions of concepts discussed within this guidance document, refer to the appropriate published version of the [FHIR standard](https://www.hl7.org/fhir/).
 
 
 {% include requirement_box.html
-	heading="FHIR-NAME-01: NHS Digital FHIR Profile names MUST follow an agreed format"
-	content="The name of the profile refers to the name.value element in the profile's StructureDefinition and the profile's filename. This section details a set of rules that MUST be followed when creating NHS Digital FHIR profiles. The name of an NHS Digital profile consists of a number of name segments, and will be in the form:-
+	heading="FHIR-NAME-01: NHS Digital FHIR Profile name MUST follow an agreed format"
+	content="This section details a set of rules that MUST be followed when creating NHS Digital FHIR profiles. The name of an NHS Digital profile consists of a number of name segments, and will be in the form:-
 
 **[Base]-[BusinessName1]-[BusinessName2]-[FHIRAssetName]-[Version]**
 
 The segments are defined as follows:-
 
 - **Base**: The base profile, if one is used e.g. for a derived profile. This is therefore optional, but mandatory for CareConnect derived profiles.
-- **BusinessName1**: The first business name of the profile, which could be a full name or an acronym related to the domain or project name e.g. ITK (Interoperability Toolkit), SPINE. The 
--  name MUST have at least one BusinessName segment. Where an asset may be used across several domains, business names SHOULD reflect that.
+- **BusinessName1**: The first business name of the profile, which could be a full name or an acronym related to the domain or project name e.g. ITK (Interoperability Toolkit), SPINE. The name MUST have at least one BusinessName segment. Where an asset may be used across several domains, business names SHOULD reflect that.
 - **BusinessName2**: The second business name of the profile. The asset name MAY have a second BusinessName segment. Where there is a second business name, each BusinessName MUST be separated by a hyphen (-) character e.g. 'ADW-Accept'.
 - **FHIRAssetName**: The name of the base FHIR asset. Mandatory
 - **Version**: This is the major version number of the profile e.g. 'CareConnect-ITK-Encounter-1'. Mandatory
 
-The profile name forms the final segment of the URL of the profile's StructureDefinition and is used to populate its logical id (e.g. the StructureDefinition.id element) on the NHS Digital FHIR Reference server. An example URL for a CareConnect derived profile (STU3) would be https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1, CareConnect-ITK-Encounter-1 being the value of the logical id and the profile's name.
+This name MUST be used in three places:
 
+- The profile's **filename**.
+- The **name** of the profile - specifically the name.value element in the StructureDefinition
+- The profile's **logical ID**.
+
+The logical ID forms the final segment of the URL of the StructureDefinition resource and is used to populate its logical id (e.g. the StructureDefinition.id element) when published on the a national FHIR Reference server. An example URL for a CareConnect derived profile (STU3) would be https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Encounter-1, CareConnect-ITK-Encounter-1 being the value of the logical id and the profile's name.
 "
 %}
 
 {% include requirement_box.html
-	heading="FHIR-NAME-02: NHS Digital FHIR CodeSystem filenames MUST follow an agreed format"
+	heading="FHIR-NAME-02: NHS Digital FHIR CodeSystem names MUST follow an agreed format"
 	content="This section details a set of rules that MUST be followed when creating NHS Digital FHIR CodeSystems. The filename of the CodeSystem consists of a number of name segments and will be in the form:-
 
 **[FHIRAssetName]-[BusinessName1]-[BusinessName2]-[Version]**
@@ -47,14 +49,19 @@ The segments are defined as follows:-
 - **BusinessName2**: The second business name of the CodeSystem. The CodeSystem MAY have a second BusinessName segment. Where there is a second BusinessName, each one MUST be separated by a hyphen (-) character. For example 'CodeSystem-SPINE-ErrorOrWarningCode'.
 - **Version**: This is the major version number of the CodeSystem e.g. 'CodeSystem-ITK-CareSettingType-1'. Mandatory
 
-The [BusinessName1]-[BusinessName2]-[Version] section of the CodeSystem's filename forms the final segment of its URL and is used to populate its logical id (e.g. the CodeSystem.id element). An example URL for a CodeSystem on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/CodeSystem/ITK-CareSettingType-1, ITK-CareSettingType-1 being the value of the logical id.
+This name MUST be used as the CodeSystems's filename.
 
+In addition, The **[BusinessName1]-[BusinessName2]-[Version]** section of the CodeSystem's name MUST be used in two places:
 
+- The **name** of the resource - specifically the name.value element
+- The resource's **logical ID**
+
+The logical ID forms the final segment of the URL of the CodeSystem resource and is used to populate its logical id (i.e. the CodeSystem.id element) when published on the a national FHIR Reference server. An example URL for a CodeSystem on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/CodeSystem/ITK-CareSettingType-1, ITK-CareSettingType-1 being the value of the logical id.
 "
 %}
 
 {% include requirement_box.html
-	heading="FHIR-NAME-03: NHS Digital FHIR ValueSet filenames MUST follow an agreed format"
+	heading="FHIR-NAME-03: NHS Digital FHIR ValueSet names MUST follow an agreed format"
 	content="This section details a set of rules that MUST be followed when creating NHS Digital FHIR ValueSets. The filename of the ValueSet consists of a number of name segments and will be in the form:-
 
 **[FHIRAssetName]-[BusinessName1]-[BusinessName2]-[Version]**
@@ -66,14 +73,20 @@ The segments are defined as follows:-
 - **BusinessName2**: The second business name of the ValueSet. The ValueSet MAY have a second BusinessName segment. Where there is a second BusinessName, each one MUST be separated by a hyphen (-) character e.g. 'ITK-PatientAllergyChangeType'.
 - **Version**: This is the major version number of the ValueSet e.g. 'ValueSet-CareConnect-MedicationDosageMethod-1'. Mandatory
 
-The [BusinessName1]-[BusinessName2]-[Version] section of the ValueSet's filename forms the final segment of the its URL and is used to populate its logical id (e.g. the ValueSet.id element). An example URL for a ValueSet on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1, CareConnect-MedicationDosageRoute-1 being the value of the logical id.
+This name MUST be used as the ValueSet's filename.
 
+In addition, The **[BusinessName1]-[BusinessName2]-[Version]** section of the ValueSet's name MUST be used in two places:
+
+- The **name** of the profile - specifically the name.value element
+- The resource's **logical ID**.
+
+The logical ID forms the final segment of the URL of the ValueSet resource and is used to populate its logical id (i.e. the ValueSet.id element) when published on the a national FHIR Reference server. An example URL for a ValueSet on the NHS Digital FHIR Reference Server is https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1, CareConnect-MedicationDosageRoute-1 being the value of the logical id.
 "
 %}
 
 {% include requirement_box.html
 	heading="FHIR-NAME-04: FHIR Extension names MUST follow an agreed format"
-	content="The name of the extension refers to the name.value element in the extension's StructureDefinition and the extension's filename. This section details a set of rules that MUST be followed when creating NHS Digital FHIR Extensions. The extension's name consists of a number of name segments and will be in the form:-
+	content="The name of the extension consists of a number of name segments and will be in the form:-
 
 **[FHIRAssetName]-[Base]-[BusinessName1]-[BusinessName2]-[Version]**
 
@@ -85,31 +98,39 @@ The segments are defined as follows:-
 - **BusinessName2**: The second business name of the extension. The asset name MAY have a second BusinessName segment. Where there is a second business name, each one MUST be separated by a hyphen (-) character e.g. 'Extension-ITK-Informant-1'.
 - **Version**: This is the major version number of the extension e.g. Extension-CareConnect-ConditionEpisode-1. Mandatory
 
-The extension name forms the final segment of the URL of the extension's StructureDefinition and is used to populate its logical id (e.g. the StructureDefinition.id element) on the NHS Digital FHIR Reference server. An example URL for a CareConnect derived extension (STU3) is https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-AllergyCertainty-1, Extension-CareConnect-GPC-AllergyCertainty-1 being the value of the logical id.
+This name MUST be used in three places:
 
+- The extension's **filename**.
+- The **name** of the extension - specifically the name.value element in the StructureDefinition
+- The resource's **logical ID**.
+
+The logical ID forms the final segment of the URL of the StructureDefinition resource and is used to populate its logical id (e.g. the StructureDefinition.id element) when published on the a national FHIR Reference server. An example URL for a CareConnect derived extension (STU3) is https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-AllergyCertainty-1, Extension-CareConnect-GPC-AllergyCertainty-1 being the value of the logical id.
 "
 %}
 
 {% include requirement_box.html
 	heading="FHIR-NAME-05: FHIR OperationDefinition names MUST follow an agreed format"
-	content="The name of the OperationDefinition refers to the name.value element in the OperationDefinition and the OperationDefinition's filename. OperationDefinitions should be named using the following segment name format:
+	content="The name of the OperationDefinition will be named using the following segment name format:
 
 **[Base]-[BusinessName]-[OperationConstraint]-[OperationDefinitionKind]-[Version]**
 
 The segments are defined to as follows:
 
-- **Base**: The base OperationDefinition, if one is used. Optional but mandatory for  a CareConnect derived OperationDefinitions.
+- **Base**: The base OperationDefinition, if one is used. Optional but mandatory for CareConnect derived OperationDefinitions.
 - **BusinessName**: A business name for the OperationDefinition. Optional.
 - **OperationConstraint**: The OperationConstraint. Mandatory. An example of an OperationConstraint is 'CareRecord'.
 - **OperationDefinitionKind**: Choice of 'Operation' or 'Query' fixed character strings. Mandatory.
 - **Version**: This is the major version number of the OperationDefinition e.g. GPConnect-CareRecord-Operation-1. Mandatory.
 
-The OperationDefinition name forms the final segment of its URL and is used to populate its logical id (e.g. the OperationDefinition.id element) on the NHS Digital FHIR Reference server. An example URL for an OperationDefinition (STU3) would be https://fhir.nhs.uk/STU3/OperationDefinition/GPConnect-RegisterPatient-Operation-1, GPConnect-RegisterPatient-Operation-1 being the value of the logical id.
+This name MUST be used in three places:
 
+- The OperationDefinition's **filename**.
+- The **name** of the resource - specifically the name.value element in the OperationDefinition
+- The resource's **logical ID**.
 
+The logical ID forms the final segment of the URL of the OperationDefinition resource and is used to populate its logical id (e.g. the OperationDefinition.id element) when published on the a national FHIR Reference server. An example URL for an OperationDefinition (STU3) would be https://fhir.nhs.uk/STU3/OperationDefinition/GPConnect-RegisterPatient-Operation-1, GPConnect-RegisterPatient-Operation-1 being the value of the logical id.
 "
 %}
-
 
 {% include requirement_box.html
 	heading="FHIR-NAME-06: FHIR identifier systems MUST follow an agreed format"
@@ -124,7 +145,6 @@ The segments are defined as follows:-
 - **BusinessNames**: The business name segments describe the identifier system. The first business name is mandatory, but all subsequent ones are optional. There may be up to four business names each separated by a hyphen (-) character e.g. 'https://fhir.nhs.uk/Id/nhs-number', https://fhir.nhs.uk/Id/sds-role-profile-id.
 "
 %}
-
 
 {% include requirement_box.html
 	heading="FHIR-NAME-07: General naming conventions MUST also be followed"
