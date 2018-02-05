@@ -53,3 +53,7 @@ $(function() {
         }
     });
 });
+
+$(function(){
+  $("#bannerSection").load("../pages/bannerGit.html"); 
+});

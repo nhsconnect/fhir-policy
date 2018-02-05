@@ -9,6 +9,10 @@ summary: "Release notes outlining changes to the FHIR Policy."
 
 Note - versions of this policy follow [semantic versioning](http://semver.org/) - minor and patch versions should be considered as non-breaking.
 
+The latest unstable in-progress version of this specification can be found on [github pages](https://nhsconnect.github.io/fhir-policy/).
+
+Those wanting to contribute to the development of the specification can raise issues and pull requests via the [git repository](https://github.com/nhsconnect/fhir-policy).
+
 #### 1.3.0-alpha (25th January 2018)
 
 - Updated naming policy statements to clarify that they cover the name, ID and filename for national profiles
