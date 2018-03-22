@@ -9,6 +9,19 @@ summary: "Release notes outlining changes to the FHIR Policy."
 
 Note - versions of this policy follow [semantic versioning](http://semver.org/) - minor and patch versions should be considered as non-breaking.
 
+The latest unstable in-progress version of this specification can be found on [github pages](https://nhsconnect.github.io/fhir-policy/).
+
+Those wanting to contribute to the development of the specification can raise issues and pull requests via the [git repository](https://github.com/nhsconnect/fhir-policy).
+
+#### 1.3.0-alpha (22nd March 2018)
+
+- Updated naming policy statements to clarify that they cover the name, ID and filename for national profiles
+- Updated naming policy for OperationDefinitions (FHIR-NAME-05) to reflect the operation action in the name
+- Added some clariying paragraphs on the publication page to clarify the roles of Github and the NHD Developer network
+- Added requirement FHIR-SERIAL-03 to clarify that custom XML namespaces outside those defined in the FHIR spec must not be used
+- Added UBRN in the list of examples of allowable national business identifiers also used as logical identifiers in requirement FHIR-IDENT-01
+- Added FHIR-CONF-02 to require CapabilityStatements for national services to conform to a national profile, with supporting guidance
+
 #### 1.2.0-alpha (7th December 2017)
 
 - Altered wording on FHIR-PUB-04 to further clarify the meaning of the maturity labels

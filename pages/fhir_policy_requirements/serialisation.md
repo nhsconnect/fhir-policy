@@ -23,3 +23,8 @@ FHIR messaging endpoints SHOULD also support JSON formatted requests/responses.
 The serialisation mime-types supported MUST be declared in the Conformance/CapabilityStatement resource for the messaging endpoint."
 %}
 
+{% include requirement_box.html
+	heading="FHIR-SERIAL-03: Namespaces outside those defined in the FHIR specification MUST NOT be used"
+	content="The FHIR standard [specifies a specific namespace](http://hl7.org/implement/standards/fhir/xml.html) for FHIR XML elements, with a second namespace for XHTML content in narrative sections. Those specifying FHIR APIs MUST not use other namespaces in their APIs"
+%}
+

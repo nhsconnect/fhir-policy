@@ -1,3 +1,14 @@
+.banner {
+	padding: 10px;
+	background-color: #fffbdb;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.banner.previousVersionBanner {
+	background-color: #ffcccc;
+}
+
 .requirement {
     width: 100%;
 }
