@@ -112,13 +112,13 @@ The logical ID forms the final segment of the URL of the StructureDefinition res
 	heading="FHIR-NAME-05: FHIR OperationDefinition names MUST follow an agreed format"
 	content="The name of the OperationDefinition will be named using the following segment name format:
 
-**[Base]-[BusinessName]-[OperationConstraint]-[OperationDefinitionKind]-[Version]**
+**[Base]-[BusinessName]-[OperationAction]-[OperationDefinitionKind]-[Version]**
 
 The segments are defined to as follows:
 
 - **Base**: The base OperationDefinition, if one is used. Optional but mandatory for CareConnect derived OperationDefinitions.
 - **BusinessName**: A business name for the OperationDefinition. Optional.
-- **OperationConstraint**: The OperationConstraint. Mandatory. An example of an OperationConstraint is 'CareRecord'.
+- **OperationAction**: This could include a verb as the first part of the name.  An example would be ‘BookAppointment’.
 - **OperationDefinitionKind**: Choice of 'Operation' or 'Query' fixed character strings. Mandatory.
 - **Version**: This is the major version number of the OperationDefinition e.g. GPConnect-CareRecord-Operation-1. Mandatory.
 
