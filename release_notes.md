@@ -13,6 +13,10 @@ The latest unstable in-progress version of this specification can be found on [g
 
 Those wanting to contribute to the development of the specification can raise issues and pull requests via the [git repository](https://github.com/nhsconnect/fhir-policy).
 
+#### 1.3.1-alpha (28th March 2018)
+
+- Added comment to FHIR-NAT-01 clarifying that new Spine subdomains must be approved by the Spine DevOps team
+
 #### 1.3.0-alpha (22nd March 2018)
 
 - Updated naming policy statements to clarify that they cover the name, ID and filename for national profiles

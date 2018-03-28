@@ -20,7 +20,9 @@ The below URLs SHOULD be used for national services where possible:
 - https://prescriptions.spineservices.nhs.uk (EPS)
 - https://directory.spineservices.nhs.uk (ODS – and possibly other directory data in future)
 
-**IMPORTANT NOTE**: This requirement is to promote alignment across NHS Digital, but until individual services are developed there is still a risk that these URLs may change"
+**IMPORTANT NOTE**: This requirement is to promote alignment across NHS Digital, but until individual services are developed there is still a risk that these URLs may change.
+
+Spine DevOps should be informed of any subdomains being added under spineservices.nhs.uk via Service Request in the NHS Digital Cherwell system. The subdomain creation task will then be passed onto the DNS team by Spine DevOps."
 %}
 
 A 'Care Connect' Profile is a FHIR profile that is owned and governed by INTEROPen and hosted by [HL7 UK](https://fhir.hl7.org.uk/).
