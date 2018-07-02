@@ -16,6 +16,7 @@ Those wanting to contribute to the development of the specification can raise is
 #### 1.4.0-beta (2nd July 2018)
 
 - Added profiles page clarifying "levels" and specifying the requirement around the use of summary fields in profiles
+- Added ability to hyperlink to individual requirements on pages
 
 #### 1.3.1-alpha (28th March 2018)
 
