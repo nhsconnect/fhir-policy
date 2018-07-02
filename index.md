@@ -22,6 +22,7 @@ These constraints are outlined across a number of sections:
 * [Publication](publication.html)
 * [Operations](operations.html)
 * [Naming](naming.html)
+* [Profiling](profiling.html)
 * [National Services](national-services.html)
 
 Note: The keywords MUST, MAY, and SHOULD in this policy are to be interpreted as described in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt).
