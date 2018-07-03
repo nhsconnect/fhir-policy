@@ -15,7 +15,7 @@ In England, we are developing profiles according to the below "levels":
 - **Level 2**: These are referred to as 'Care Connect Profiles' and are England-wide profiles curated through the INTEROPen community, and published on the [HL7 UK FHIR reference server](https://fhir.hl7.org.uk)
 - **Level 3**: These are implementation-specific profiles for a particular system or domain. For NHS Digital these are published on the [NHS Developer Network FHIR Reference Server](https://fhir.nhs.uk)
 
-INTEROPen have defined further guidance on profiles in their [design decisions log](https://docs.google.com/spreadsheets/d/1PkdrXAML4z6attSrSnWF45ODFBZrjLA5PZw1R9q3Ttg/edit#gid=399932391).
+INTEROPen have defined further guidance on profiles in their [design decisions log](https://docs.google.com/spreadsheets/d/1PkdrXAML4z6attSrSnWF45ODFBZrjLA5PZw1R9q3Ttg/edit#gid=399932391), and in [this document](https://drive.google.com/file/d/1k4ITq_Qdzw-jak_x4RCiGDZ57ZgRxUIG/view) on profiling.
 
 NHS Digital has agreed to base any profiles on the Level 2 profiles where these exist (see requirement [FHIR-NAT-02](national-services.html#FHIR-NAT-02)).
 
