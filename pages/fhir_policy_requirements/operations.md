@@ -12,6 +12,7 @@ When deploying a FHIR ReST endpoint, the FHIR standard defines the standard ReST
 The target architectural model for a FHIR endpoint is ReST as described [here](https://www.hl7.org/fhir/http.html). Therefore, designers of FHIR APIs should seek to align with this model, and make use of RESTful CRUD operations.
 
 {% include requirement_box.html
+	identifier="FHIR-OPER-01"
 	heading="FHIR-OPER-01: Where a request maps to a standard FHIR operation, the standard operation SHOULD be used"
 	content="Use of standard FHIR ReST operations makes implementation simpler for clients using standard FHIR libraries and tools, so should be used where possible.
 
@@ -25,6 +26,7 @@ This is appropriate where a server wants to allow resources to be accessed or up
 In addition, FHIR provides a mechanism to define custom operations as described [here](https://www.hl7.org/fhir/operations.html). FHIR custom operations follow an RPC architectural model. Ideally APIs should seek to avoid a mixture of architectural styles however it is recognised that deviations from the RESTful model are applicable in certain circumstances.
 
 {% include requirement_box.html
+	identifier="FHIR-OPER-02"
 	heading="FHIR-OPER-02: More complex and behaviours involving updates to multiple resources or complex querying or composition of resources MAY use an RPC-style FHIR Operation"
 	content="Examples of cases where a custom operation may be appropriate:
 

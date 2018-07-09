@@ -13,6 +13,7 @@ For detailed definitions of concepts discussed within this guidance document, re
 
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-01"
 	heading="FHIR-NAME-01: NHS Digital FHIR Profile name MUST follow an agreed format"
 	content="This section details a set of rules that MUST be followed when creating NHS Digital FHIR profiles. The name of an NHS Digital profile consists of a number of name segments, and will be in the form:-
 
@@ -37,6 +38,7 @@ The logical ID forms the final segment of the URL of the StructureDefinition res
 %}
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-02"
 	heading="FHIR-NAME-02: NHS Digital FHIR CodeSystem names MUST follow an agreed format"
 	content="This section details a set of rules that MUST be followed when creating NHS Digital FHIR CodeSystems. The filename of the CodeSystem consists of a number of name segments and will be in the form:-
 
@@ -61,6 +63,7 @@ The logical ID forms the final segment of the URL of the CodeSystem resource and
 %}
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-03"
 	heading="FHIR-NAME-03: NHS Digital FHIR ValueSet names MUST follow an agreed format"
 	content="This section details a set of rules that MUST be followed when creating NHS Digital FHIR ValueSets. The filename of the ValueSet consists of a number of name segments and will be in the form:-
 
@@ -85,6 +88,7 @@ The logical ID forms the final segment of the URL of the ValueSet resource and i
 %}
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-04"
 	heading="FHIR-NAME-04: FHIR Extension names MUST follow an agreed format"
 	content="The name of the extension consists of a number of name segments and will be in the form:-
 
@@ -109,6 +113,7 @@ The logical ID forms the final segment of the URL of the StructureDefinition res
 %}
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-05"
 	heading="FHIR-NAME-05: FHIR OperationDefinition names MUST follow an agreed format"
 	content="The name of the OperationDefinition will be named using the following segment name format:
 
@@ -133,6 +138,7 @@ The logical ID forms the final segment of the URL of the OperationDefinition res
 %}
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-06"
 	heading="FHIR-NAME-06: FHIR identifier systems MUST follow an agreed format"
 	content="NHS Digital identifier systems may be used in the system element of the Identifier datatype. They establish the namespace for an asset's identifier.value element and have a URI datatype. This section details a set of rules that MUST be followed when creating NHS Digital FHIR identifier systems. The name of the identifier system consists of a number of name segments and will be in the form:-
 
@@ -147,6 +153,7 @@ The segments are defined as follows:-
 %}
 
 {% include requirement_box.html
+	identifier="FHIR-NAME-07"
 	heading="FHIR-NAME-07: General naming conventions MUST also be followed"
 	content="The following additional rules MUST also be adhered to for naming NHS Digital FHIR assets:-
 
