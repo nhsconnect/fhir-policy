@@ -35,8 +35,16 @@ Resources that are part of Care Connect (under the governance of INTEROPen) MUST
 {% include requirement_box.html
 	identifier="FHIR-PUB-04"
 	heading="FHIR-PUB-04: FHIR API Maturity"
-	content="When any FHIR API implementation guides are published (using Jekyll as per FHIR-PUB-01), they MUST have an associated maturity label. These labels are based on the GDS development process stages, and will be one of:
+	content="When any FHIR API implementation guides are published (using Jekyll as per FHIR-PUB-01), they MUST have an associated maturity label. These labels are the GDS development process stages, and will be one of:
 
+- **Discovery**: a Feasibility study. A 'No code' development. Designed to find out what users are trying to achieve, any constraints, improvement opportunities
+- **Alpha**: Develop prototypes and test with users. Could be minimal functionality and potentially prototypes for any options to determine which is best
+- **Private Beta**: Working version and test with invited users. Handle real transactions and work at scale. ‘Invite only’ or regional. Must Pass assessment by business and technical SME’s
+- **Public Beta**: All users can participate. Version unlikely to change substantially, but still needs further testing by a wider group of implementors before becoming live
+- **Live**: The live phase is about supporting the service in a sustainable way, and continuing to iterate and make improvements
+- **Retiring**: Implementors notified that the service is discontinued and not to be used for new developments
+
+<h4> Previously the NHS Digital process stages were defined as: (not to be used for new developments)</h4>
  - **Experimental**: Early development/proof of concept version of an API for early sight during discovery.
  - **Alpha**: Initial test APIs, likely to change substantially.
 	- Typical Usage: Engagement with others interested in being involved with early development work and influencing the direction taken.
@@ -45,6 +53,17 @@ Resources that are part of Care Connect (under the governance of INTEROPen) MUST
  - **Release Candidate**: APIs that are largely complete, unlikely to change substantially, but still need further testing by a wider group of implementers before becoming live.
 	- Typical Usage: After having been previously implemented by 'first of type' or pilot sites and now to be rolled out to a wider group of implementers.
  - **Live**: Release live APIs
- - **Discontinued**: APIs which have been discontinued and should not be used for new development"
+ - **Discontinued**: APIs which have been discontinued and should not be used for new development
+ 
+ <h4> The GDS and previous process stages map as follows: </h4>
+ 
+ |GDS          |NHS Digital (previous)|
+ |-------------|----------------------|
+ |Discovery    |Experimental          |
+ |Alpha        |Alpha                 |
+ |Private Beta |Beta                  |
+ |Public Beta  |Release Candidate     |
+ |Live         |Live                  |
+ |Retiring     |Discontinued          | "
 %}
 

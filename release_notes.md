@@ -13,6 +13,9 @@ The latest unstable in-progress version of this specification can be found on [g
 
 Those wanting to contribute to the development of the specification can raise issues and pull requests via the [git repository](https://github.com/nhsconnect/fhir-policy).
 
+#### 1.5.0-Public Beta (26th June 2019)
+- FHIR-PUB-04: FHIR API Maturity now follows the GDS development process stages
+
 #### 1.4.0-beta (2nd July 2018)
 
 - Added profiles page clarifying "levels" and specifying the requirement around the use of summary fields in profiles
