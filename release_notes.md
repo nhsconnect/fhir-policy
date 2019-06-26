@@ -13,6 +13,10 @@ The latest unstable in-progress version of this specification can be found on [g
 
 Those wanting to contribute to the development of the specification can raise issues and pull requests via the [git repository](https://github.com/nhsconnect/fhir-policy).
 
+#### 1.6.0-Live (26th June 2019)
+- FHIR-PUB-04: FHIR API Maturity now follows the GDS development process stages
+
+
 #### 1.5.0-live (13th February 2019)
 
 - Added requirements FHIR-IDENT-02, FHIR-IDENT-03 and FHIR-IDENT-04 to clarify the use of logical and literal references in different FHIR paradigms.
